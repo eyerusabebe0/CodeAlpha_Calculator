@@ -1,0 +1,118 @@
+body {
+  background-color: #121212; 
+  margin: 0;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+
+@media (max-width: 400px) {
+  .container {
+    width: 90vw;
+    padding: 10px;
+  }
+
+  .total {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .equal {
+    width: 100%;
+    margin-left: 0;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .input-button {
+    font-size: 18px;
+  }
+}
+
+
+.container
+{
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+ flex-direction: column;   /* vertical layout */
+  align-items: stretch; 
+  font-size: 20px;
+  background-color:rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  margin-top: 40px;
+}
+
+button {
+  transition: transform 0.1s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 8px #00ffcc;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+.total
+    {
+      display: grid;
+      grid-template-columns: repeat(4,50px);
+      column-gap:20px ;
+      row-gap: 20px;
+      margin-left: 20px;
+    
+    }
+
+  .input-button
+  {
+    text-align: right;
+    padding: 10px 3px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+  }
+ 
+  .clean
+  {background-color: red;
+    color: white;
+  }
+
+  .equal
+  {
+    background-color: green;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 35px;
+    padding: 10px 15px;
+  }
+
+  button
+  {
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="container">
+     <input class="input-button" readonly>
+     <div class="total">
+    <button onclick="clean();"class="clean">C</button> 
+    <button onclick="calculating('(')">(</button> 
+     <button onclick="calculating(')')">)</button>
+    <button onclick="percent()">%</button> 
+    <button onclick="calculating('7') ">7</button> 
+    <button onclick="calculating('8')">8</button> 
+    <button onclick="calculating('9')">9</button> 
+    <button onclick="calculating('/')">/</button> 
+    <button onclick="calculating('4')">4</button> 
+    <button onclick="calculating('5')">5</button> 
+    <button onclick="calculating('6')">6</button> 
+    <button onclick="calculating('*')">*</button> 
+    <button onclick="calculating('1')">1</button> 
+    <button onclick="calculating('2')">2</button> 
+    <button onclick="calculating('3')">3</button> 
+    <button onclick="calculating('-')">-</button> 
+    <button onclick="calculating('0')">0</button> 
+    <button onclick="backspace()">⌫</button> 
+    <button onclick="calculating('.')">.</button> 
+    <button onclick="calculating('+')">+</button>
+    <button onclick="equal()" class="equal">=</button>              
+</div>
+  <script src="calculator.js"></script>
+  </div>
+</body>
+</html>
